@@ -12,6 +12,8 @@ spec:
     metadata:
       labels:
         name: rabbitmq
+      annotations:
+        prometheus.io.scrape: "false"
     spec:
       containers:
       - name: rabbitmq
